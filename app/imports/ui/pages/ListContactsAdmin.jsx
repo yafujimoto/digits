@@ -5,15 +5,16 @@ import { useTracker } from 'meteor/react-meteor-data';
 import LoadingSpinner from '../components/LoadingSpinner';
 import Contact from '../components/Contact';
 import { Contacts } from '../../api/contact/Contacts';
+import ContactAdmin from '../components/ContactAdmin';
 
 /* Renders a table containing all the Stuff documents. Use <StuffItem> to render each row. */
-const ListContacts = () => {
+const ListContactsAdmin = () => {
   // useTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker
   const { ready, contacts } = useTracker(() => {
     // Note that this subscription will get cleaned up
     // when your component is unmounted or deps change.
     // Get access to Stuff documents.
-    const subscription = Meteor.subscribe(Contacts.userPublicationName);
+    const subscription = Meteor.subscribe(Contacts.adminPublicationName);
     // Determine if the subscription is ready
     const rdy = subscription.ready();
     // Get the Stuff documents
@@ -31,7 +32,7 @@ const ListContacts = () => {
             <h2>List Contacts</h2>
           </Col>
           <Row xs={1} md={2} lg={3} className="g-4">
-            {contacts.map((contact) => (<Col key={contact._id}><Contact contact={contact} /></Col>))}
+            {contacts.map((contact) => (<Col key={contact._id}><ContactAdmin contact={contact} /></Col>))}
           </Row>
         </Col>
       </Row>
@@ -39,4 +40,4 @@ const ListContacts = () => {
   ) : <LoadingSpinner />);
 };
 
-export default ListContacts;
+export default ListContactsAdmin;
