@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { Card, Image, ListGroup } from 'react-bootstrap';
 import Note from './Note';
+<<<<<<< Updated upstream
 import AddNote from './AddNote';
+=======
+
+>>>>>>> Stashed changes
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 const Contact = ({ contact, notes }) => (
   <Card className="h-100">
@@ -17,8 +21,11 @@ const Contact = ({ contact, notes }) => (
       <ListGroup variant="flush">
         {notes.map((note) => <Note key={note._id} note={note} />)}
       </ListGroup>
+<<<<<<< Updated upstream
       <AddNote owner={contact.owner} contactId={contact._id} />
       <AddNote owner={contact.owner} contactId={contact._id} />
+=======
+>>>>>>> Stashed changes
       <Link to={`/edit/${contact._id}`}>Edit</Link>
     </Card.Body>
   </Card>
