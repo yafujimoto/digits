@@ -1,4 +1,4 @@
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/landing-page.png)
+<img src="doc/fujimoto1.png">
 
 meteor-application-template-react is a sample Meteor 2.9 application that illustrates: 
 
@@ -149,7 +149,7 @@ By default, each user only sees the Stuff that they have created.  However, the 
 
 When you retrieve the app at http://localhost:3000, this is what should be displayed:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/landing-page.png)
+<img src="doc/fujimoto1.png">
 
 The next step is to use the Login menu to either Login to an existing account or register a new account.
 
@@ -157,54 +157,54 @@ The next step is to use the Login menu to either Login to an existing account or
 
 Clicking on the Login link, then on the Sign In menu item displays this page:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/signin-page.png)
+<img src="doc/fujimoto2.png">
 
 #### Register page
 
 Alternatively, clicking on the Login link, then on the Sign Up menu item displays this page:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/register-page.png)
+<img src="doc/fujimoto3.png">
 
 
 #### Landing (after Login) page, non-Admin user
 
 Once you log in (either to an existing account or by creating a new one), the navbar changes as follows:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/landing-after-login-page.png)
+<img src="doc/fujimoto4.png">
 
 You can now add new Stuff documents, and list the Stuff you have created. Note you cannot see any Stuff created by other users.
 
-#### Add Stuff page
+#### Add Contact page
 
 After logging in, here is the page that allows you to add new Stuff:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/add-stuff-page.png)
+<img src="doc/fujimoto5.png">
 
-#### List Stuff page
+#### List Contact page
 
 After logging in, here is the page that allows you to list all the Stuff you have created:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/list-stuff-page.png)
+<img src="doc/fujimoto6.png">
 
 You click the "Edit" link to go to the Edit Stuff page, shown next.
 
-#### Edit Stuff page
+#### Edit Contact page
 
 After clicking on the "Edit" link associated with an item, this page displays that allows you to change and save it:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/edit-stuff-page.png)
+<img src="doc/fujimoto7.png">
 
 #### Landing (after Login), Admin user
 
 You can define an "admin" user in the settings.json file. This user, after logging in, gets a special entry in the navbar:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/admin-landing-page.png)
+<img src="doc/fujimoto8.png">
 
 #### Admin page (list all users stuff)
 
 To provide a simple example of a "super power" for Admin users, the Admin page lists all of the Stuff by all of the users:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/admin-list-stuff-page.png)
+<img src="doc/fujimoto9.png">
 
 Note that non-admin users cannot get to this page, even if they type in the URL by hand.
 
